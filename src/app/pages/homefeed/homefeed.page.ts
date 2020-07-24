@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homefeed',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomefeedPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { 
+    // this.router.events.subscribe((res) =>{
+    //   console.log(res);
+    //   console.log(this.router.url);
+    // })
+  }
 
   ngOnInit() {
+  }
+  clicktab(event: Event,tab: string){
+    event.stopImmediatePropagation();
   }
 
 }

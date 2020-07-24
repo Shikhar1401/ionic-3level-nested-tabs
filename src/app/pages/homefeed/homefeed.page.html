@@ -1,6 +1,6 @@
 <ion-tabs>
   <ion-tab-bar color="danger" slot="top">
-    <ion-tab-button tab="trades">      
+    <ion-tab-button (click)="clicktab($event,'external')" [routerLink]="['/home/homefeed/trades']" tab="trades">      
       <ion-label>trades</ion-label>
     </ion-tab-button>
 

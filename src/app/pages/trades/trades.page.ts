@@ -12,4 +12,8 @@ export class TradesPage implements OnInit {
   ngOnInit() {
   }
 
+  clickTab(event: Event, tab: string) {
+    event.stopImmediatePropagation();
+  }
+
 }
